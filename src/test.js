@@ -1,10 +1,15 @@
 "use strict";
-let greeting = "Hello, TypeScript!";
-let userCount = 42;
-let isLoading = true;
-let scores = [100, 95, 98];
-
-console.log(greeting);
-console.log(`User count: ${userCount}`);
-console.log(`Is loading: ${isLoading}`);
-console.log(`Scores: ${scores.join(", ")}`);
+// let greeting: string = "Hello, TypeScript!";
+// let userCount: number = 42;
+// let isLoading: boolean = true;
+// let scores: number[] = [100, 95, 98];
+let w = 1;
+w = "string"; // no error
+w = {
+    runANonExistentMethod: () => {
+        console.log("I think therefore I am");
+    }
+};
+if (typeof w === 'object' && w !== null) {
+    w.runANonExistentMethod();
+}
