@@ -20,3 +20,16 @@
 // }
 
 // -----------------------------------------
+
+// let v: any = true;
+// v = "string"; // no error as it can be "any" type
+// Math.round(v)
+
+// ----------------------------------------
+
+// const names: string[] = [];
+// names.push("Dylan");
+
+// const names: readonly string[] = ["Dylan"];
+// names.push("Jack"); // Error: Property 'push' does not exist on type 'readonly string[]'.
+
