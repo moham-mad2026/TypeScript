@@ -33,3 +33,10 @@
 // const names: readonly string[] = ["Dylan"];
 // names.push("Jack"); // Error: Property 'push' does not exist on type 'readonly string[]'.
 
+// --------------------------------------------
+
+// // define our tuple
+// let ourTuple: [number, boolean, string];
+
+// // initialize correctly
+// ourTuple = [5, false, 'Coding God was here'];

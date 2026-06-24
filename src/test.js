@@ -20,7 +20,12 @@
 // v = "string"; // no error as it can be "any" type
 // Math.round(v)
 // ----------------------------------------
-const names = [];
-names.push("Dylan");
-
-console.log(names);
+// const names: string[] = [];
+// names.push("Dylan");
+// const names: readonly string[] = ["Dylan"];
+// names.push("Jack"); // Error: Property 'push' does not exist on type 'readonly string[]'.
+// --------------------------------------------
+// // define our tuple
+// let ourTuple;
+// // initialize correctly
+// ourTuple = [5, false, 'Coding God was here'];
